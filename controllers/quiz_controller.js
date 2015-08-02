@@ -90,6 +90,15 @@ exports.update = function(req, res) {
 	);	
 };
 
+// DELETE /quizes/:id
+exports.destroy = function(req, res) {
+	req.quiz.destroy().then(
+		function(){
+			res.redirect('/quizes');
+		}
+	).catch(function(error){next(error);});
+};
+
 exports.author = function(req, res) {
   res.render('quizes/author');
 };
