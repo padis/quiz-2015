@@ -6,3 +6,6 @@ h2 span, section h3, label.rem
                  { display: none; }
 body             { font-size: xx-large; }
 footer, input    { font-size: x-large; }
+#ErrorMsgs{
+color: red;
+}
